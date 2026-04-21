@@ -1,8 +1,7 @@
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.primitives.serialization import load_pem_private_key, load_pem_public_key
-import time
-from Lab_3_RC5_algorithm import file_encrypt
+
 
 def pr_key_for_download(private_key, passphrase):
 
@@ -146,6 +145,9 @@ def load_public_key_bytes(filename):
     except UnicodeError:
         return None
 
+
+# import time
+# from Lab_3_RC5_algorithm import file_encrypt
 # filepath = 'D:/Sofi/Information Security/Лабораторна робота №2.pdf'
 #
 # with open(filepath,'rb') as f:
