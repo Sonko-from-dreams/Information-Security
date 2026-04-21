@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#876175"          # Колір кнопок та активних елементів
+backgroundColor = "#CDD5D1"       # Колір фону
+secondaryBackgroundColor = "#B4A6AB" # Колір бічної панелі та контейнерів
+textColor = "#524147"             # Колір тексту
+font = "sans serif"               # Можна обрати "sans serif", "serif" або "monospace"
