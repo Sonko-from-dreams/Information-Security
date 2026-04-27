@@ -5,7 +5,7 @@ from cryptography.hazmat.primitives.asymmetric import utils
 
 def generate_keys():
 
-    private_key = dsa.generate_private_key(key_size=1024,)
+    private_key = dsa.generate_private_key(key_size=2048,)
     public_key = private_key.public_key()
 
     return private_key, public_key

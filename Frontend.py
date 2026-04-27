@@ -1,8 +1,9 @@
-from pages.Lab_1 import *
-from pages.Lab_2 import *
-from pages.Lab_3 import *
-from pages.Lab_4 import *
-from pages.Lab_5 import *
+import streamlit as st
+from pages.Lab_1 import lab_1
+from pages.Lab_2 import lab_2
+from pages.Lab_3 import lab_3
+from pages.Lab_4 import lab_4
+from pages.Lab_5 import lab_5
 
 st.set_page_config(layout="wide")
 

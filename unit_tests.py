@@ -1,8 +1,9 @@
 import unittest
-from Lab_1_Randomizer import *
-from Lab_2_MD5_algorithm import *
-from Lab_3_RC5_algorithm import *
-from Lab_4_RSA_algorithm import *
+from Lab_1_Randomizer import analyze, get_period, generate_rand_num
+from Lab_2_MD5_algorithm import md5_hash, verify_file_integrity
+from Lab_3_RC5_algorithm import encrypt, encrypt_cbc, decrypt, decrypt_cbc
+from Lab_4_RSA_algorithm import generate_keys, save_keys, encrypt_RCA, decrypt_RCA, load_private_key_bytes, encrypt_chunks, decrypt_chunks, load_public_key_bytes
+from cryptography.hazmat.primitives import serialization
 
 class TestLab1(unittest.TestCase):
     # тест для перевірки генерації пвч

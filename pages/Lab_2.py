@@ -1,5 +1,5 @@
 import streamlit as st
-from Lab_2_MD5_algorithm import *
+from Lab_2_MD5_algorithm import string_hash
 
 
 # сторінка другої лабораторної

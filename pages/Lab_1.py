@@ -1,5 +1,5 @@
 import streamlit as st
-from Lab_1_Randomizer import *
+from Lab_1_Randomizer import generate_rand_num, analyze, get_period
 import pandas as pd
 import numpy as np
 

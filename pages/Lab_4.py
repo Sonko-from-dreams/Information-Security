@@ -1,5 +1,6 @@
 import streamlit as st
-from Lab_4_RSA_algorithm import *
+from Lab_4_RSA_algorithm import pr_key_for_download, load_private_key_bytes, load_public_key_bytes, pb_key_for_download, generate_keys
+from Lab_4_RSA_algorithm import encrypt_chunks, decrypt_chunks
 import io
 import zipfile
 import base64

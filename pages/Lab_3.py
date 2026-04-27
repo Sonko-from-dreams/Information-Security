@@ -1,5 +1,5 @@
 import streamlit as st
-from Lab_3_RC5_algorithm import *
+from Lab_3_RC5_algorithm import file_encrypt, file_decrypt
 
 
 # сторінка третьої лабораторної
