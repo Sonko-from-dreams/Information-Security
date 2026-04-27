@@ -104,10 +104,7 @@ def lab_5():
                 if sign:
                     signature = load_signature_from_hex_file(sign)
                     data_to_check = None
-                    if type == "text":
-                        data_to_check = input_data
-                    else:
-                        data_to_check = input_data
+                    data_to_check = input_data
                     if data_to_check and st.session_state.public_key:
                         try:
                             if type == "text":
@@ -141,7 +138,7 @@ def lab_5():
                             result = sign_message(st.session_state.private_key, data_to_sign)
                             if result:
                                 st.download_button("Завантажити підпис", result.hex(),
-                                                   file_name=f"text_signature.enc")
+                                                   file_name="text_signature.enc")
                             else:
                                 st.error(f"Помилка підпису: {e}.")
                         else:

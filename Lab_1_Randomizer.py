@@ -16,7 +16,7 @@ def gcd(a, b):
 # функція для генерації послідовності пвч
 # визначеної довжини n
 def generate_rand_num (n, m = m, a = a, c = c, x0 = x_0) :
-    xi = x_0
+    xi = x0
     random_num = []
 
     for i in range(n):
