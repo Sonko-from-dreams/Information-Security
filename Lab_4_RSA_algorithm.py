@@ -28,7 +28,7 @@ def generate_keys():
     return private_key, public_key
 
 
-def encrypt_RCA(message, public_key):
+def encrypt_rca(message, public_key):
 
     if isinstance(message, str):
         message = message.encode()
@@ -44,7 +44,7 @@ def encrypt_RCA(message, public_key):
     return ciphertext
 
 
-def decrypt_RCA(ciphertext, private_key):
+def decrypt_rca(ciphertext, private_key):
 
     plaintext = private_key.decrypt(
         ciphertext,

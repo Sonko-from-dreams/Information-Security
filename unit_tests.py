@@ -2,7 +2,7 @@ import unittest
 from Lab_1_Randomizer import analyze, get_period, generate_rand_num
 from Lab_2_MD5_algorithm import md5_hash, verify_file_integrity
 from Lab_3_RC5_algorithm import encrypt, encrypt_cbc, decrypt, decrypt_cbc
-from Lab_4_RSA_algorithm import generate_keys, save_keys, encrypt_RCA, decrypt_RCA, load_private_key_bytes, encrypt_chunks, decrypt_chunks, load_public_key_bytes
+from Lab_4_RSA_algorithm import generate_keys, save_keys, encrypt_rca, decrypt_rca, load_private_key_bytes, encrypt_chunks, decrypt_chunks, load_public_key_bytes
 from cryptography.hazmat.primitives import serialization
 
 class TestLab1(unittest.TestCase):
@@ -113,8 +113,8 @@ class TestLab4(unittest.TestCase):
         text = 'Hello world'
         key = b'key'
         priv_key, pub_key = generate_keys()
-        enc_mess = encrypt_RCA(text, pub_key)
-        dec_mess = decrypt_RCA(enc_mess, priv_key)
+        enc_mess = encrypt_rca(text, pub_key)
+        dec_mess = decrypt_rca(enc_mess, priv_key)
         self.assertEqual(dec_mess.decode(), text)
 
     # тест шифру RSA для файлів довільного розміру
