@@ -19,7 +19,7 @@ def generate_rand_num (n, m = m, a = a, c = c, x0 = x_0) :
     xi = x0
     random_num = []
 
-    for i in range(n):
+    for _ in range(n):
         xn = int((int(a) * xi + c) % m)
         random_num.append(xn)
         xi = xn

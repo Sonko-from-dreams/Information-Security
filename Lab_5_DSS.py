@@ -110,7 +110,7 @@ def verify_message(public_key, message, signature):
         )
         return True
 
-    except Exception as e :
+    except Exception:
         return False
 
 def verify_file(public_key, file, signature):

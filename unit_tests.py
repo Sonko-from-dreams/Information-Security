@@ -69,13 +69,13 @@ class TestLab2(unittest.TestCase):
         file = 'D:/Sofi/Information Security/test_file.txt'
         hash_file = 'D:/Sofi/Information Security/test_hash.txt'
         result = verify_file_integrity(file, hash_file)
-        self.assertEqual(result, True)
+        self.assertTrue(result)
 
     def test_integrity_wrong(self):
         file = 'D:/Sofi/Information Security/test_file.txt'
         hash_file = 'D:/Sofi/Information Security/test_hash_wrong.txt'
         result = verify_file_integrity(file, hash_file)
-        self.assertEqual(result, False)
+        self.assertFalse(result)
 
 
 class TestLab3(unittest.TestCase):
@@ -111,7 +111,6 @@ class TestLab4(unittest.TestCase):
     # тест шифру RSA
     def test_encryption(self):
         text = 'Hello world'
-        key = b'key'
         priv_key, pub_key = generate_keys()
         enc_mess = encrypt_rca(text, pub_key)
         dec_mess = decrypt_rca(enc_mess, priv_key)
@@ -120,7 +119,6 @@ class TestLab4(unittest.TestCase):
     # тест шифру RSA для файлів довільного розміру
     def test_bloc_encryption(self):
         text = b'Hello world'
-        key = b'key'
         priv_key, pub_key = generate_keys()
         enc_mess = encrypt_chunks(text, pub_key)
         dec_mess = decrypt_chunks(enc_mess, priv_key)
